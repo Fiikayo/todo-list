@@ -2,7 +2,8 @@
   "name": "todo-list",
   "version": "1.0.0",
   "description": "Todo list API",
-  "main": "index.js",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/Fiikayo/todo-list/issues"
   },
-  "homepage": "https://github.com/Fiikayo/todo-list#readme"
+  "homepage": "https://github.com/Fiikayo/todo-list#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pg": "^8.12.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.3"
+  }
 }
