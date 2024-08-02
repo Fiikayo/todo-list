@@ -1,3 +1,4 @@
+//setup db connection
 import { Sequelize } from "sequelize";
 import dotenv from "dotenv";
 

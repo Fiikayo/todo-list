@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "fikayo.oyinloye",
+    "password": null,
+    "database": "todoapp",
+    "host": "127.0.0.1",
+    "dialect": "psql"
+  },
+  "test": {
+    "username": "fikayo.oyinloye",
+    "password": null,
+    "database": "todoapp",
+    "host": "127.0.0.1",
+    "dialect": "psql"
+  },
+  "production": {
+    "username": "fikayo.oyinloye",
+    "password": null,
+    "database": "todoapp",
+    "host": "127.0.0.1",
+    "dialect": "psql"
+  }
+}

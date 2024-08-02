@@ -1,11 +1,10 @@
-import bodyParser from "body-parser";
 import express from "express";
+import todoRoutes from "./routes/Todos/index.js";
 
 const app = express();
 
-app.use(bodyParser);
+app.use(express.json());
 
-
-//initialize middleware and routes here
+app.use("/api/todos", todoRoutes);
 
 export default app;
