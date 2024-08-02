@@ -1,7 +1,7 @@
-import express from "express";
-import { getTodos } from "../../controllers/TodoController/index.js";
+const express = require("express");
+const { getTodos } = require("../../controllers/TodoController/index.js");
 const router = express.Router();
 
 router.get("/", getTodos);
 
-export default router;
+module.exports = router;

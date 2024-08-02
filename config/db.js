@@ -1,6 +1,6 @@
-//setup db connection
-import { Sequelize } from "sequelize";
-import dotenv from "dotenv";
+//setup db
+const { Sequelize } = require("sequelize");
+const dotenv = require("dotenv");
 
 dotenv.config();
 
@@ -11,10 +11,11 @@ const sequelize = new Sequelize(process.env.PG_URI, {
 const connectDB = async () => {
   try {
     await sequelize.authenticate();
+    console.log("db successfully connected");
   } catch (error) {
     console.error("Error connecting to PostgreSQL", error);
     process.exit(1);
   }
 };
 
-export { connectDB, sequelize };
+module.exports = { connectDB, sequelize };

@@ -4,20 +4,20 @@
     "password": null,
     "database": "todoapp",
     "host": "127.0.0.1",
-    "dialect": "psql"
+    "dialect": "postgres"
   },
   "test": {
     "username": "fikayo.oyinloye",
     "password": null,
     "database": "todoapp",
     "host": "127.0.0.1",
-    "dialect": "psql"
+    "dialect": "postgres"
   },
   "production": {
     "username": "fikayo.oyinloye",
     "password": null,
     "database": "todoapp",
     "host": "127.0.0.1",
-    "dialect": "psql"
+    "dialect": "postgres"
   }
 }

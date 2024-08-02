@@ -1,6 +1,11 @@
+const Todo = require("../../../models/todo.js");
+
 const getTodos = async (req, res, next) => {
+  try {
+    const todos = await Todo.findAll();
+    res.json(todos);
+  } catch (error) {}
   console.log("receiving todos");
-  res.json("get all todos route");
 };
 
-export { getTodos };
+module.exports = { getTodos };

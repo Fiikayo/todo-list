@@ -3,4 +3,4 @@ const TodoStatusEnum = Object.freeze({
   Pending: "pending",
 });
 
-export default TodoStatusEnum;
+module.exports = TodoStatusEnum;
